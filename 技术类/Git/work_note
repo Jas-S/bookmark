@@ -1,0 +1,142 @@
+■Gitコマンド
+・git status：状態確認
+・git clone [URL] [NAME]：既存倉庫取得、使用 clone 命令克隆了一个仓库，命令会自动将其添加为远程仓库并默认以 “origin” 为简写。 
+・git add [FILE]：可以用它开始跟踪新文件，或者把已跟踪的文件放到暂存区，还能用于合并时把有冲突的文件标记为已解决状态等
+	*运行了 git add 之后又作了修订的文件，需要重新运行 git add 把最新版本重新暂存起来。
+・ignore
+	$ cat .gitignore
+	*.[oa]
+	*~
+	例：
+	# no .a files
+	*.a
+
+	# but do track lib.a, even though you're ignoring .a files above
+	!lib.a
+
+	# only ignore the TODO file in the current directory, not subdir/TODO
+	/TODO
+
+	# ignore all files in the build/ directory
+	build/
+
+	# ignore doc/notes.txt, but not doc/server/arch.txt
+	doc/*.txt
+
+	# ignore all .pdf files in the doc/ directory
+	doc/**/*.pdf
+Tips：GitHub 有一个十分详细的针对数十种项目及语言的 .gitignore 文件列表，你可以在 https://github.com/github/gitignore 找到它
+
+・git diff：差分を見る
+	git diff --staged 查看已暂存的将要添加到下次提交里的内容(Git 1.6.1以前是--cached)
+・git commit -m 'コメント'：修正を倉庫にコミット
+	给 git commit 加上 -a 选项，Git 就会自动把所有已经跟踪过的文件暂存起来一并提交，从而跳过 git add 步骤。
+	--amend　提交完了才发现漏掉了几个文件没有添加，或者提交信息写错了。 此时，可以运行该命令尝试重新提交。
+・git rm [FILE]：倉庫からファイルを除外する
+	git rm --cached [FILE]：你想让文件保留在磁盘，但是并不想让 Git 继续跟踪。
+・git mv file_from file_to：在 Git 中对文件改名。
+・git log：ログを見る。
+※文字化け解消：set LESSCHARSET=utf-8
+	-p，用来显示每次提交的内容差异。 你也可以加上 -2 来仅显示最近两次提交。如 git log -p -2
+	--stat 看每次提交的简略的统计信息。
+	--pretty=format 以指定格式输出。如 git log --pretty=format:"%h - %an, %ar : %s"
+		%H：提交对象（commit）的完整哈希字串
+		%h：提交对象的简短哈希字串
+		%T：树对象（tree）的完整哈希字串
+		%t：树对象的简短哈希字串
+		%P：父对象（parent）的完整哈希字串
+		%p：父对象的简短哈希字串
+		%an：作者（author）的名字
+		%ae：作者的电子邮件地址
+		%ad：作者修订日期（可以用 --date= 选项定制格式）
+		%ar：作者修订日期，按多久以前的方式显示
+		%cn：提交者（committer）的名字
+		%ce：提交者的电子邮件地址
+		%cd：提交日期
+		%cr：提交日期，按多久以前的方式显示
+		%s：提交说明
+	--graph ASCII字符串来形象地展示你的分支、合并历史。
+	
+	限制 git log 输出的选项：
+		-(n)　仅显示最近的 n 条提交
+		--since, --after　仅显示指定时间之后的提交。
+		--until, --before　仅显示指定时间之前的提交。
+		--author　仅显示指定作者相关的提交。
+		--committer　仅显示指定提交者相关的提交。
+		--grep　仅显示含指定关键字的提交
+		-S　仅显示添加或移除了某个关键字的提交
+
+・git reset HEAD [file]：取消暂存。 
+・git checkout -- [file]：撤消对文件的修改
+	在 Git 中任何 已提交的 东西几乎总是可以恢复的。 甚至那些被删除的分支中的提交或使用 --amend 选项覆盖的提交也可以恢复。 
+	然而，任何你未提交的东西丢失后很可能再也找不到了。
+
+
+・git remote：查看远程仓库。
+	-v，会显示需要读写远程仓库使用的 Git 保存的简写与其对应的 URL。
+	git remote add <shortname> <url> 添加一个新的远程 Git 仓库，同时指定一个你可以轻松引用的简写。
+・git fetch <shortname>：拉取 shortname 的仓库中有但你没有的信息。
+	fetch 命令会将数据拉取到你的本地仓库 - 它并不会自动合并或修改你当前的工作。 你必须手动将其合并入你的工作。
+・git pull：自动的抓取然后合并远程分支到当前分支。 
+・git push [remote-name] [branch-name]：推送到远程仓库。
+・git remote show [remote-name]：查看远程仓库。
+・git remote rename：去修改一个远程仓库的简写名。
+・git remote rm：移除一个远程仓库。
+・打标签tag见<https://git-scm.com/book/zh/v2/Git-基础-打标签>
+・Git 别名见<https://git-scm.com/book/zh/v2/Git-基础-Git-别名>
+
+・git branch [分支名]：创建一个分支。命令仅仅创建一个新分支，并不会自动切换到新分支中去。
+・git checkout [分支名]：分支切换。
+	在切换分支时，一定要注意你工作目录里的文件会被改变。 如果是切换到一个较旧的分支，你的工作目录会恢复到该分支最后一次		提交时的样子。 如果 Git 不能干净利落地完成这个任务，它将禁止切换分支。
+
+
+・git checkout -b [分支名]：签出一个新分支
+・git branch -d [分支名]：删除分支（未checkout）
+
+// 显示出所有有差异的文件列表
+git diff release origin/develop --stat
+
+// 将只提交到develop上却未提交到release分支上的commit输出到diff.txt文件中 
+git log release..develop > diff.txt
+
+//显示出所有有差异的文件的详细差异
+git diff it1-pre-release origin/develop
+
+// 显示包含指定提交内容的文件一览
+git log --stat --grep 【000001】
+
+// 将指定branch的log grep结果出力到a.txt文件中
+git log -b [分支名] --name-status --grep 【000001】 > a.txt
+ 输出内容如下：
+ commit 76b8b2ba2221126685a6b2ae3b81dfae8c337ac1
+ Author: o.t-kawamura <o.t-kawamura@dyn.co.jp>
+ Date:   Wed Sep 11 15:45:02 2019 +0900
+
+    【000001】担当者：ASN河村 M：API接続先ホスト名を、ALBホスト名から内部DNSホスト名に変更
+
+M	src/main/resources/application-develop.yml
+M	src/main/resources/application-production.yml
+M	src/main/resources/application-staging.yml
+
+// 撤回commit(未PUSH)
+git reset --hard HEAD~4
+ HEAD^的意思是上一个版本，也可以写成HEAD~1
+ 如果你进行了2次commit，想都撤回，可以使用HEAD~2
+
+// 撤回commit后PUSH
+git push --force
+
+// 個人分のdevelopブランチに有る,releaseブランチに無いコミット一覧をdiff.txtに出力する
+git log release..develop --author=個人ID --oneline --name-status [--grep keyword] >diff.txt
+
+// リリース待ちコミット一覧出力
+git log origin/master..origin/release --oneline --name-status --pretty=format:"%h - %an, %ar : %s" >diff.txt
+
+// リリース対象コミット一覧出力
+git log origin/release..origin/develop --oneline --name-status --pretty=format:"%h - %an, %ar : %s" >diff.txt
+
+
+// cherry-pick命令每拣选一个commit就会提交一次生成一个新的commit id。 
+// 如果我们想让每个commit 拣选后暂缓提交，等到所有commit都拣选完成后，自己手动commit，应该怎么办呢？答案是用-n 选项：
+// 多个commit-hash使用空格分割, commit-hash最好按提交时间先后排列, 即最先提交的commit放在前面。
+git cherry-pick  -n
