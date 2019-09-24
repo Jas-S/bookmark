@@ -6,5 +6,5 @@
 
 ・[Git 误删分支恢复方法](https://blog.csdn.net/fdipzone/article/details/50616386)
 
-・[Git权威指南](https://www.worldhello.net/gotgit/)
+・[Git 工作流程](http://www.ruanyifeng.com/blog/2015/12/git-workflow.html)
 
