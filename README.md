@@ -2,4 +2,4 @@
 
 [Spring相关](./技术类/Java/Spring/list.md "技术类")
 
-[Git相关](./技术类/Java/Spring/list.md "技术类")
+[Git相关](./技术类/Git/list.md "技术类")
