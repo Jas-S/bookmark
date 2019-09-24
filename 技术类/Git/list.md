@@ -5,3 +5,6 @@
 ・[Git中处理文件名中的亚洲字符](http://www.voidcn.com/article/p-blncfahi-bsr.html)
 
 ・[Git 误删分支恢复方法](https://blog.csdn.net/fdipzone/article/details/50616386)
+
+・[Git权威指南](https://www.worldhello.net/gotgit/)
+
