@@ -1,2 +1,0 @@
-set ws=wscript.createobject("wscript.shell")  
-ws.run "Chrome.bat /start",0 
