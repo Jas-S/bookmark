@@ -7,6 +7,8 @@
 
 ・[Git 使用规范流程](http://www.ruanyifeng.com/blog/2015/08/git-use-process.html)
 
+・「Learn git online with fun!」(https://learngitbranching.js.org/)
+
 ## 使用技巧
 ・[Git 同时与多个远程库互相同步](https://www.cnblogs.com/hongdada/p/7573923.html)
 
