@@ -19,3 +19,8 @@
 
 ・[Spring Boot 2.0 WebFlux 教程 (一) | 入门篇](https://juejin.im/post/5cb5d71d51882545dd09b634)
 
+# Build Tools
+
+【Gradle】
+
+・[全面理解Gradle - 定义Task](https://blog.csdn.net/singwhatiwanna/article/details/76084580)
