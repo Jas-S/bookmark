@@ -1,6 +1,10 @@
 # Basic
 ・[JDK8新特性详解](https://my.oschina.net/mdxlcj/blog/1622718)
 
+## 多线程
+
+・[正确理解Thread Local的原理与适用场景](http://www.jasongj.com/java/threadlocal/)
+
 
 # Spring
 
