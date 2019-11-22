@@ -9,7 +9,7 @@
 
 ・[Learn git online with fun!](https://learngitbranching.js.org/)
 
-・[Git远程操作详解](https://www.ruanyifeng.com/blog/2014/06/git_remote.html)
+・[Git远程操作详解--阮一峰的网络日志](https://www.ruanyifeng.com/blog/2014/06/git_remote.html)
 
 
 ## 使用技巧
