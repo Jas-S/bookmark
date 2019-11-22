@@ -9,6 +9,9 @@
 
 ・[Learn git online with fun!](https://learngitbranching.js.org/)
 
+・[Git远程操作详解](https://www.ruanyifeng.com/blog/2014/06/git_remote.html)
+
+
 ## 使用技巧
 ・[Git 同时与多个远程库互相同步](https://www.cnblogs.com/hongdada/p/7573923.html)
 
