@@ -6,3 +6,6 @@
 ```mysql
 show table status where name = 'table_name';
 ```
+
+
+·[HikariCP监控指标介绍和应用](https://www.cnblogs.com/fireround/p/11756087.html)
