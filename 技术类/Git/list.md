@@ -15,7 +15,7 @@
 ## 使用技巧
 ・[Git 同时与多个远程库互相同步](https://www.cnblogs.com/hongdada/p/7573923.html)
 
-・[Git撤销已经push到远端的commit](https://www.xuxusheng.com/post/git撤销已经push到远端的commit)
+・[回滚错误的修改](https://github.com/geeeeeeeeek/git-recipes/wiki/2.6-%E5%9B%9E%E6%BB%9A%E9%94%99%E8%AF%AF%E7%9A%84%E4%BF%AE%E6%94%B9)
 
 ・[Git中处理文件名中的亚洲字符](http://www.voidcn.com/article/p-blncfahi-bsr.html)
 
