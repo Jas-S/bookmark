@@ -36,11 +36,12 @@ begin
  declare days int default 0;
  set days = day(LAST_DAY(now()));
  while n < days do
-   insert into `facilityServiceDB`.`dynamic_date` (`check_in_date`) value (date_add(now(), interval n day));
+   if n != 0 then
+     insert into `facilityServiceDB`.`dynamic_date` (`check_in_date`) value (date_add(now(), interval n day));
+   end if;
    set n = n + 1;
  end while;
-end
-//
+end;//
 delimiter ;
 
 call insertDate();
