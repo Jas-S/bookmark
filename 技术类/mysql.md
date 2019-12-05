@@ -26,3 +26,22 @@ SELECT table_name,create_time FROM  information_schema.TABLES where TABLE_SCHEMA
 ```mysql
 show create table table_name;
 ```
+## 存储过程
+```mysql
+drop procedure if exists `insertDate`;
+delimiter //
+create procedure insertDate()
+begin
+ declare n int default 0;
+ declare days int default 0;
+ set days = day(LAST_DAY(now()));
+ while n < days do
+   insert into `facilityServiceDB`.`dynamic_date` (`check_in_date`) value (date_add(now(), interval n day));
+   set n = n + 1;
+ end while;
+end
+//
+delimiter ;
+
+call insertDate();
+```
