@@ -21,5 +21,7 @@
 
 ・[Git 误删分支恢复方法](https://blog.csdn.net/fdipzone/article/details/50616386)
 
+・[批量删除GIT已合并到master的分支](https://zhuanlan.zhihu.com/p/66118919)
+
 
 
