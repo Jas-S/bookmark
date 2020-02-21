@@ -5,5 +5,6 @@
 [Git相关](./技术类/Git/list.md "技术类")
 
 
-[AWS]
+## AWS
+
 [【2020年】AWS全サービスまとめ](https://dev.classmethod.jp/cloud/aws/aws-summary-2020/?utm_source=go.pardot.com&utm_medium=mail&utm_content=blog&utm_campaign=2001_mailmagazine)
