@@ -4,6 +4,9 @@
 
 [win10 下，docker 拉取镜像报错：Error response from daemon: Get https://registry-1.docker.io/v2/: dial tcp: lookup registry-1.docker.io on 192.168.65.1:53: no such host](https://learnku.com/docker/tweets/34576)
 
+[[docker][win10]安装的坑](https://www.jianshu.com/p/09d53c822cf8)
+
+
 
 # 应用指南
 
