@@ -16,6 +16,8 @@
 
 ・[Spring Boot+Spring Security项目开发(一):RESTful API介绍](https://blog.csdn.net/tryandfight/article/details/80461250)
 
+・[Spring MVC/Boot 统一异常处理最佳实践](http://www.zhaojun.im/springboot-exception/)  
+
 
 【Web　Flux】
 
