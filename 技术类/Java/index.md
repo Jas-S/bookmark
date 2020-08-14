@@ -23,8 +23,8 @@
 
 ・[Spring Boot 2.0 WebFlux 教程 (一) | 入门篇](https://juejin.im/post/5cb5d71d51882545dd09b634)
 
-【Soap】
-・[リクエスト要素が「Request」で終わっていない場合、spring-wsによって生成された無効なwsdl](https://ja.coder.work/so/java/613740)
+【Soap】  
+・[リクエスト要素が「Request」で終わっていない場合、spring-wsによって生成された無効なwsdl](https://ja.coder.work/so/java/613740)  
 
 # Build Tools
 
