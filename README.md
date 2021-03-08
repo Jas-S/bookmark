@@ -12,4 +12,7 @@
 
 
 
-[在Linux下如何根据域名自签发OpenSSL证书与常用证书转换](https://www.cnblogs.com/shetao/articles/14339839.html)
+[在Linux下如何根据域名自签发OpenSSL证书与常用证书转换](https://www.cnblogs.com/shetao/articles/14339839.html)  
+
+
+[微软Azure建站系列-免费SSL证书](https://blog.csdn.net/juwikuang/article/details/88102734)
