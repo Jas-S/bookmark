@@ -15,4 +15,7 @@
 [在Linux下如何根据域名自签发OpenSSL证书与常用证书转换](https://www.cnblogs.com/shetao/articles/14339839.html)  
 
 
-[微软Azure建站系列-免费SSL证书](https://blog.csdn.net/juwikuang/article/details/88102734)
+## Azure
+
+[微软Azure建站系列-免费SSL证书](https://blog.csdn.net/juwikuang/article/details/88102734)  
+[Automate backups of your Azure Database for MySQL server to azure storage for longer term retention](https://techcommunity.microsoft.com/t5/azure-database-for-mysql/automate-backups-of-your-azure-database-for-mysql-server-to/ba-p/1791157)  
