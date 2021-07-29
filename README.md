@@ -19,3 +19,4 @@
 
 [微软Azure建站系列-免费SSL证书](https://blog.csdn.net/juwikuang/article/details/88102734)  
 [Automate backups of your Azure Database for MySQL server to azure storage for longer term retention](https://techcommunity.microsoft.com/t5/azure-database-for-mysql/automate-backups-of-your-azure-database-for-mysql-server-to/ba-p/1791157)  
+[Azure Database for MySQL でのバックアップと復元](https://docs.microsoft.com/ja-jp/azure/mysql/concepts-backup)
